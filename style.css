@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Bebas Neue", sans-serif; */
+}
+
+body {
+    background-color: #e8f1f2;
+    color: #333;
+}
+
+header {
+   background-color: #333;
+    color: #f0f0f0;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    padding: 10px 30px;
+    list-style: none;
+}
+
+header ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    background-image: url(https://jornal.usp.br/wp-content/uploads/2022/04/20220401_redes-sociais-lousa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f0f0f0;
+    border-radius:  0 0 20px 20px;
+}
+
+.container-main {
+    backdrop-filter: blur(4px);
+    -webki-backdrop-filter: blur(16px);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius:  0 0 20px 20px;
+
+}
+
+main h2 {
+    font-size: 1.6em;
+    padding: 20px 10px 10px 10px;
+    color: #ffff00;
+}
+
+main h3 {
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    color: #ffff00;
+}
+
+main p {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #333;
+    background-color: #ffff00;
+    padding: 10px 30px;
+    margin: 10px 10px 40px 10px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    font-size: 1.2em;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.text-intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 20px;
+}
+
+.img-intro {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-intro img {
+    width: 500px;
+    height: 300px;
+}
+
+.section {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.content p {
+    margin: 20px;
+    max-width: 60vw;
+}
+
+.content iframe {
+    max-height: 400px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.text {
+    padding: 10px;
+    text-align: center;
+}
+
+.text h3 {
+    padding: 20px;
+    text-align: justify;
+}
+
+.text p {
+    text-align: left;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-tabela{
+    padding: 20px;
+    margin: 30px;
+}
+
+table {
+    border: 1px solid #333;
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 7px;
+    text-align: left;
+}
+
+th {
+    background-color: #727272;
+    color: #f0f0f0;
+}
+
+.content-form {
+    padding: 20px;
+}
+
+form {
+    background-color: rgba(73, 169, 253, 0.425);
+    background-image: url(src/img-contato.jpg); 
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px 0;
+}
+
+input {
+    margin: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #0f0101;
+    border-radius: 20px;
+}
+
+footer {
+    border-radius: 20px 20px 0 0;
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #f0f0f0;
+}
+
+@media (max-width: 480px) {
+    
+    header ul li {
+        padding: 10px 5px;
+    }
+
+    .text h1 {
+        font-size: 1.4em;
+    }
+
+    .text h2 {
+        font-size: 1.2em;
+    }
+
+    .text p {
+        font-size: 1em;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .content {
+        display: block;
+        text-align: justify;
+    }
+
+    .img-intro {
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .content iframe {
+        max-width: 300px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768) {
+    .text h1 {
+        font-size: 1.8em;
+    }
+
+    text h2 {
+        font-size: 1.6em;
+    }
+
+    text p {
+        font-size: 1.4em;
+        margin: 40px;
+    }
+
+    .content {
+        display: block;
+        text-align: justify;
+    }
+
+    .img-intro {
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .content iframe {
+        max-width: 530px;
+        padding: 5px;
+    }
+}
